@@ -19,11 +19,16 @@
    pip install -r requirements.txt
    ```
 
-4. **Run the Application**
+## Run the Application
    ```bash
-   streamlit run app.py
+   streamlit run scripts/App/app.py
    ```
 
-5. **Inferencing with CNN**
+## Inferencing with CNN
 
-6. **Inferencing with ViT**
+## Inferencing with ViT
+
+1. **For Livestream**
+    ```bash
+   python scripts/inferencing/infer.py 
+   ```

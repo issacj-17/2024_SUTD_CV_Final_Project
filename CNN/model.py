@@ -14,13 +14,10 @@ class CNN3D(nn.Module):
         self.bn3 = nn.BatchNorm3d(128)
         self.pool = nn.MaxPool3d(kernel_size=2, stride=2)
         self.flatten = nn.Flatten()
-
-        # Adjust the input size of the fully connected layer
-        # Calculate the output size of the last Conv3D+Pool3D layer
         example_input = torch.randn(1, 3, 10, 112, 112)  # (batch_size, channels, depth, height, width)
         with torch.no_grad():
             example_output = self.pool(self.bn3(self.conv3(self.pool(self.bn2(self.conv2(self.pool(self.bn1(self.conv1(example_input)))))))))
-            flattened_size = example_output.numel()  # Calculate the number of features
+            flattened_size = example_output.numel()  
 
         self.fc1 = nn.Linear(flattened_size, 256)
         self.fc2 = nn.Linear(256, num_classes)

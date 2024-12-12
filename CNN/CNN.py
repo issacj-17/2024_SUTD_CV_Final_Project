@@ -232,7 +232,7 @@ device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 print(f"Using device: {device}")
 model = EnhancedDrowsinessCNN().to(device)
 
-# Class weights (if the dataset is imbalanced)
+# Class weights
 class_weights = 5.0
 criterion = nn.BCEWithLogitsLoss(pos_weight=torch.tensor(class_weights).to(device))
 optimizer = torch.optim.Adam(model.parameters(), lr=0.0001)

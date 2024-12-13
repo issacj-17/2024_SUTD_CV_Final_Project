@@ -19,9 +19,9 @@
    pip install -r requirements.txt
    ```
 
-4. Download the Model weights & dataset
+4. **Download the Model weights & dataset**
 
-   You can download the model weights of the ViT-LSTM model [here](https://sutdapac.sharepoint.com/:u:/s/202450.035ComputerVision1DProject/EQiaelkJtfRDlL0ZNmxux5YBBrEZV2IQUL-08luC-kJ6lg?e=1XZH5C). Place the `best_model.pth` file in the `checkpoints\vit-lstm` directory in order to execute the notebooks and scripts.
+   You can download the model weights of the ViT-LSTM model [here](https://sutdapac.sharepoint.com/:u:/s/202450.035ComputerVision1DProject/EQiaelkJtfRDlL0ZNmxux5YBBrEZV2IQUL-08luC-kJ6lg?e=1XZH5C). Place the `best_model.pth` file in the `checkpoints\vit-lstm` directory.
    Also, download the processed dataset [here](https://sutdapac.sharepoint.com/:u:/s/202450.035ComputerVision1DProject/Ed7nOIMb9JdFnTTaXzmJ9XsBP1e0O7-0mFwAOXU0_Xv2Xg?e=GfztK4) and extract the `rgb_face` directory. Place the directory within the `processed` directory within the repository.
    
 ---
